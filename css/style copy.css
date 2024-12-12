@@ -1,0 +1,600 @@
+.container {
+	width: 100%; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+}
+
+/* Typography */
+
+/* NOT IN USE?? */
+h1 {
+	font-family: 'Rubik Scribble';
+	src: url(../images/RubikScribble-Regular.ttf);
+	font-size: 4em;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-65%);
+
+}
+/* For Titles */
+h2 {
+	
+	-webkit-text-stroke-width: 3;
+	-webkit-text-stroke-color: #FFF;
+	font-family: "Rubik Scribble";
+	font-style: normal;
+	font-weight: 550;
+	line-height: normal;	
+	position: absolute;
+}
+
+/* NOT IN USE?? */
+h3 {
+	width: 355px;
+	height: 52px;
+	flex-shrink: 0;
+	color: #FFF;
+	-webkit-text-stroke-width: 1;
+	-webkit-text-stroke-color: #FFF;
+	font-family: "Rubik Scribble";
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 45px;
+}
+
+/* For text */
+h4 {
+	font-family: 'Mohave';
+	src: url(../images/Mohave-VariableFont_wght.ttf);
+}
+
+/* For logo match */
+h5 {
+	top: 385px;
+	right: -100px;
+	width: 1148.824px;
+	height: 170px;
+	transform: rotate(-0.792deg);
+	flex-shrink: 0;
+	color: #FFF;
+	text-align: center;
+	font-family: 'Verdana';
+	src: url(..images/Verdana.ttf);
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 540;
+	line-height: normal;
+	position: absolute;
+}
+
+/* For Style */
+h6 {
+	text-align: center;
+	font-family: 'Rubik 80s Fade';
+	src: url(../images/Rubik80sFade-Regular.ttf);
+	font-size: 1000px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	position: absolute;
+}
+
+
+
+/* Navigation Bar */
+.navigation {
+	width: 100vw;
+	height: 40px;
+	background: black;
+	position: fixed; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+	z-index: 1; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+}
+
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 60px;
+	font-family: 'Mohave';
+	src: url(../images/Mohave-VariableFont_wght.ttf);
+	font-size: 1.3em;
+}
+
+li {
+	float: right; /* makes all of our links on the right side of the nav bar */
+	margin-left: 40px; /* gives 20px of spacing between each text link */
+}
+
+a {
+	color: white;
+	text-decoration: none; /* removes the underline and blue color of our text links */
+}
+
+li:last-child { /* last-child only targets the last item on our list, which is our home page link */
+	float: left; /* make sure that the home page link is on the left of the page, not the right */
+	margin-left: 0px;
+}
+
+
+
+
+
+/* Home Page CSS */
+
+.home { /* this is the hero image area */
+ /* same idea but for the vertical height of the web browser */
+	width: 100%;
+	height: 958px;
+	flex-shrink: 0;
+	background: url(../images/big\ worship.jpg) lightgray 50% / cover no-repeat;
+	overflow: hidden;
+
+}
+
+	.archive {
+		right: 230px;
+		top: 260px;
+		position: absolute;
+		width: 597.439px;
+		height: 597.439px;
+		transform: rotate(-0.12deg);
+		flex-shrink: 0;
+	}
+
+	.cross {
+		right: 30px;
+		top: 10px;
+		position: absolute;
+		width: 597.439px;
+		height: 597.439px;
+		transform: rotate(-0.12deg);
+		flex-shrink: 0;
+	}
+
+
+.one {
+	width: 1000px; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+	height: 70vh;
+	background: url(../images/singing.jpg);
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-position-x: -100px;
+	background-position-y: -300px;
+	border: grey 60px solid;
+	box-sizing: border-box;
+	margin: auto; /* makes sure that the section is centered on the page */
+	color: #FFF;
+}
+
+	.r {
+		width: 880px;
+		height: 423px;
+		flex-shrink: 0;
+		background: rgba(119, 30, 30, 0.40);
+	}
+
+	.podcast {
+		font-size: 80px;
+		width: 355px;
+		height: 52px;
+		flex-shrink: 0;
+		color: white;
+		left: -10px;
+		top: 80px;
+		position: absolute;
+		transform: translateX(20%); /* translateX only moves the object horizontally */
+	}
+
+
+	.podtext {
+		position: absolute;
+		top: 200px;
+		left: 60px;
+		width: 574px;
+		height: 173px;
+		flex-shrink: 0;
+		color:white;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;	
+	}
+
+	.v {
+		width: 1307px;
+		height: 364px;
+		flex-shrink: 0;
+		position: absolute;
+		bottom: -250px;
+		left: 60px;
+	}
+
+	.s {
+		width: 1307px;
+		height: 364px;
+		flex-shrink: 0;
+		position: absolute;
+		bottom: -250px;
+		left: 130px;
+	}
+
+	.a {
+		width: 1260px;
+		height: 340px;
+		flex-shrink: 0;
+		position: absolute;
+		bottom: -215px;
+		left: 200px;
+	}
+
+
+.two {
+	width: 1000px; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+	height: 1160px;
+	/* width: 100%;
+	height: 958px; */
+	background: black;
+	margin: auto;
+	overflow: hidden;
+}
+
+	.breakoutsimage {
+		background-image: url(../images/face\ light.jpg);
+		/* width: 830px;
+		height: 1262px; */
+		flex-shrink: 0;
+		opacity: 0.77;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 44%;
+		height: 1160px;
+		background-size: cover;
+		background-position-x: -120px;
+		background-position-y: 0px;
+		background-repeat: no-repeat;
+	}
+
+	.dot {
+		width: 309.759px;
+		height: 856.561px;
+		transform: rotate(276deg);
+		flex-shrink: 0;
+		position: absolute;
+		top: -450px;
+		right: 120px;
+		color: black;
+	}
+
+	.dottwo {
+		width: 309.759px;
+		height: 856.561px;
+		transform: rotate(276deg);
+		flex-shrink: 0;
+		position: absolute;
+		bottom: -500px;
+		right: 120px;
+		color: black;
+	}
+
+	.breakouts {
+		width: 986px;
+		height: 161px;
+		flex-shrink: 0;
+		color: white;
+		font-weight: 400;
+		font-size: 80px;
+		font-style: normal;
+		position: absolute;
+		left: 100px;
+		top: 20px;
+	}
+
+		.bone {
+			width: 134px;
+			height: 240px;
+			color: #FFF;
+			font-size: 200px;
+			font-style: normal;
+			font-weight: 400;
+			position: absolute;
+			left: 20px;
+			top: 150px;
+		}
+
+			.bonetext {
+				width: 704px;
+				height: 87px;
+				color: #B81919;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				position: absolute;
+				left: 200px;
+				top: 150px;
+			}
+
+		.btwo {
+			width: 134px;
+			height: 240px;
+			color: #FFF;
+			font-size: 200px;
+			font-style: normal;
+			font-weight: 400;
+			position: absolute;
+			left: 20px;
+			top: 500px;
+		}
+
+			.btwotext {
+				width: 704px;
+				height: 87px;
+				color: #B81919;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				position: absolute;
+				left: 200px;
+				top: 500px;
+			}
+
+		.bthree {
+			width: 134px;
+			height: 240px;
+			color: #FFF;
+			font-size: 200px;
+			font-style: normal;
+			font-weight: 400;
+			position: absolute;
+			left: 20px;
+			top: 850px;
+		}
+
+			.bthreetext {
+				width: 704px;
+				height: 87px;
+				color: #B81919;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				position: absolute;
+				left: 200px;
+				top: 850px;
+			}
+
+	.main {
+		width: 986px;
+		height: 161px;
+		flex-shrink: 0;
+		color:#B81919;
+		font-weight: 400;
+		font-size: 80px;
+		font-style: normal;
+		position: absolute;
+		left: 750px;
+		top: -10px;
+	}
+	.maintwo {
+		width: 986px;
+		height: 161px;
+		flex-shrink: 0;
+		color:#B81919;
+		font-weight: 400;
+		font-size: 80px;
+		font-style: normal;
+		position: absolute;
+		left: 751px;
+		top: -10px;
+	}
+
+
+	.sessions {
+		width: 986px;
+		height: 161px;
+		flex-shrink: 0;
+		color:#B81919;
+		font-weight: 400;
+		font-size: 80px;
+		font-style: normal;
+		position: absolute;
+		right: -480px;
+		top: 70px;
+		text-align: right;
+	}
+	.sessionstwo {
+		width: 986px;
+		height: 161px;
+		flex-shrink: 0;
+		color:#B81919;
+		font-weight: 400;
+		font-size: 80px;
+		font-style: normal;
+		position: absolute;
+		right: -481px;
+		top: 70px;
+		text-align: right;
+	}
+
+		.mone {
+			width: 134px;
+			height: 240px;
+			color: #B81919;
+			font-size: 200px;
+			font-style: normal;
+			font-weight: 400;
+			position: absolute;
+			right: 20px;
+			top: 250px;
+		}
+
+			.monetext {
+				width: 704px;
+				height: 87px;
+				color: white;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				position: absolute;
+				right: 175px;
+				top: 350px;
+				text-align: right;
+			}
+
+		.mtwo {
+			width: 134px;
+			height: 240px;
+			color: #B81919;
+			font-size: 200px;
+			font-style: normal;
+			font-weight: 400;
+			position: absolute;
+			right: 20px;
+			top: 450px;
+		}
+
+			.mtwotext {
+				width: 704px;
+				height: 87px;
+				color: white;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				position: absolute;
+				right: 175px;
+				top: 550px;
+				text-align: right;
+			}
+
+		.mthree {
+			width: 134px;
+			height: 240px;
+			color: #B81919;
+			font-size: 200px;
+			font-style: normal;
+			font-weight: 400;
+			position: absolute;
+			right: 20px;
+			top: 650px;
+		}
+
+		.mthreetext {
+			width: 704px;
+			height: 87px;
+			color: white;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			position: absolute;
+			right: 175px;
+			top: 750px;
+			text-align: right;
+		}
+
+		.mfour {
+			width: 134px;
+			height: 240px;
+			color: #B81919;
+			font-size: 200px;
+			font-style: normal;
+			font-weight: 400;
+			position: absolute;
+			right: 20px;
+			top: 850px;
+		}
+
+		.mfourtext {
+			width: 704px;
+			height: 87px;
+			color: white;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			position: absolute;
+			right: 175px;
+			top: 950px;
+			text-align: right;
+		}
+
+
+.four {
+	width: 1000px;
+	height: 100px;
+	background-color:#771E1E;
+	margin: auto;
+	overflow: hidden;
+}
+		
+	.photos {
+		font-size: 1.5em;
+		color:#FF8B8B;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 50px;
+		white-space: nowrap;
+		position: absolute;
+		overflow: hidden;
+	}
+
+
+
+
+.footer {
+	width: 100vw;
+	height: 100px;
+	background: black;
+}
+
+	.saltlogo {
+		background: url(../images/salt-logo.jpg);
+		position: absolute;
+		left: 10px;
+		bottom: 10px;
+		width: 72.3px;
+		height: 73px;
+		/* flex-shrink: 0; */
+	}
+
+	.contact {
+		width: 250px;
+		height: 45px;
+		float: right;
+		margin-left: 40px;
+		margin-bottom: 10px;
+		margin-top: 20px;
+		margin-right: 60px;
+	}
+
+	.contact svg {
+		margin-left: 20px;
+	}
+
+	
+.box {
+	width: 300px;
+	height: 700px;
+	background: white;
+	position: absolute;
+	left: 100px;
+	top: 200px;
+}
+
+.active {
+	color:  #FF8B8B;
+}
